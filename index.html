@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<style>
+ 
+</style>
+
+<body>
+    <header>
+        <div id="menu" class="menu-hidden"></div>
+        <nav id="navbar">
+            <div class="left">João Gabriel </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#Portifolio">Portifolio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <hr>
+
+    <main>
+
+        <section class="Home">
+          
+            <section class="firstSection">
+                <div class="leftSection">
+                    Olá meu nome é <span class="purple">João Gabriel</span>
+                    <div>e sou um </div><span id='element'></span>
+                </div>
+                <div class="rightSection">
+                    <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe
+                            src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="110%" height="110%"
+                            style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen></iframe></div>
+                    <p><a href="https://giphy.com/gifs/dommespace-domme-space-programador-qgQUggAC3Pfv687qPC"></a></p>
+                </div>
+            </section>
+        </section>
+
+        <hr>
+        <section id='sobre'>
+            <section class="firstSection">
+                <div class="leftSection1">
+                    Olá! Meu nome é João Gabriel, tenho 20 anos e estudo desenvolvimento de sistemas na rede de ensino SENAI.
+                </div>
+                <div class="rightSection1">
+                    <img src=".jpeg" >
+                </div>
+            </section>
+        </section>
+        <hr>
+        <section id='Portifolio'>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Confira meu portifolio
+                    <div class="rightSection">
+                        foto
+                    </div>
+                </div>
+            </section>
+        </section>
+        <hr>
+        <section id='contato'>
+            <div class="contact-section">
+                
+                <div class="contact-icons">
+                    <h2>Entre em Contato:</h2>
+                    <a href="https://github.com/JohnJohn003"><img src="git.png" width="30" height="30" alt=""><i class="fa fa-github"></i> Github</a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-lima-mariano-657986203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="link.png" width="30" height="30" alt=""><i class="fa fa-linkedin"></i> LinkedIn</a>
+                    <a href="#phone"><img src="phone.png" width="30" height="30" alt=""><i class="fa fa-phone"></i> 55 (31) 997651067</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Desenvolvedor de sistemas.', 'e', ' Web Developer.'],
+            typeSpeed: 50,
+        });
+
+        window.addEventListener('scroll', () => {
+            const menu = document.getElementById('menu');
+            if (window.scrollY > 100) {
+                menu.classList.remove('menu-hidden');
+                menu.classList.add('menu-visible');
+            } else {
+                menu.classList.remove('menu-visible');
+                menu.classList.add('menu-hidden');
+            }
+        });
+
+        
+    </script>
+  <a href="#" class="btn"></a>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
